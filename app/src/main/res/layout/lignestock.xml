@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idstock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text=""/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#fdffbd"
+        >
+
+        <TextView
+            android:id="@+id/nomstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomstock"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:textColor="@color/colorAccent"
+            />
+
+
+        <ImageButton android:id="@+id/supprimerstock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_delete"
+            android:onClick="supprimerStock"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/supprimer"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/datestock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/renvstock"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/finstock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finstock"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/prochainrappelstock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prochainrappelordo"
+        android:textAlignment="center"
+        android:textColor="#2c2a4f"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/ajouterrappelstock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/rappelprochdate"
+        android:onClick="configStock"/>
+
+    <Button
+        android:id="@+id/butmajstock"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/majordo"
+        android:onClick="renouvellement"
+        />
+
+</LinearLayout>

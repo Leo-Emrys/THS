@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/idtraitementnv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text=""/>
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:background="#e1e2e8"
+    >
+
+    <TextView
+        android:id="@+id/intnomtraitement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nomtraitement"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="1"/>
+
+
+    <ImageButton android:id="@+id/editbouton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:src="@drawable/ic_pencil"
+        android:onClick="modifierTraitement"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/editer"/>
+
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/intprochainedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intitule"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    <TextView
+        android:id="@+id/prochdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="@string/date"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/prochainrappel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prochainrappeltitre"
+        android:textAlignment="center"
+        android:textColor="#2c2a4f"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/ajouterrappel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/rappelprochdate"
+        android:onClick="configRappel"/>
+
+
+
+    <Button
+        android:id="@+id/butnewdate"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/nouvelledate"
+        android:onClick="nouvelledate"
+        />
+
+
+
+</LinearLayout>

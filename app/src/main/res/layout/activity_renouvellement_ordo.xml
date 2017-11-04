@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_renouvellement_ordo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lmachillot.ths.RenouvellementOrdoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/renvordotitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/renvordotitre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/nomordorenv"
+            android:layout_below="@id/renvordotitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nomordo"
+            />
+
+        <TextView
+            android:id="@+id/nvdateordotitre"
+            android:layout_below="@id/nomordorenv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:text="@string/daterenouvellement"
+            />
+
+
+        <DatePicker
+            android:layout_below="@id/nvdateordotitre"
+            android:id="@+id/nvdateordo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/lignedureenewordo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nvdateordo"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dureeordo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <EditText
+                android:id="@+id/dureeordorenv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:inputType="number"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/jours"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@id/lignedureenewordo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valider"
+            android:onClick="enregistrerRenouvellement"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

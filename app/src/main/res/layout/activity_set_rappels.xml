@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_rappels"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lmachillot.ths.SetRappelsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/titreRappel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titrerappel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent"/>
+
+
+    <LinearLayout
+        android:layout_below="@id/titreRappel"
+        android:id="@+id/lignetraitementconcerne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        >
+
+
+        <TextView
+            android:id="@+id/traitementrappel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/traitementrappel"
+            android:textColor="@color/colorAccent"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_below="@id/lignetraitementconcerne"
+        android:id="@+id/txtrecevoir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtrecevoir"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:layout_below="@id/txtrecevoir"
+        android:id="@+id/nbjours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="@string/hintrappel"
+
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_below="@id/nbjours"
+        android:id="@+id/txtjoursav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtjoursav"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@id/txtjoursav"
+        android:id="@+id/ligneheurerappel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+    <TextView
+        android:id="@+id/txtheurerappel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtheurerappel"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        />
+
+        <EditText
+            android:id="@+id/heurerappel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/heurerappelhint"
+            />
+
+
+        <TextView
+            android:id="@+id/txthrappel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txthrappel"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_below="@id/ligneheurerappel"
+        android:id="@+id/buttonnewrappel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newrappel"
+        android:layout_marginTop="20dp"
+        android:onClick="validerEtContinuer" />
+
+    <Button
+        android:layout_below="@id/buttonnewrappel"
+        android:id="@+id/validerterminerrappel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/validerterminer"
+        android:layout_marginTop="10dp"
+        android:onClick="validerTerminer" />
+
+    <Button
+        android:layout_below="@id/validerterminerrappel"
+        android:id="@+id/buttonpasserrappel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/passerrappel"
+        android:layout_marginTop="10dp"
+        android:onClick="passer" />
+
+    </RelativeLayout>
+
+</ScrollView>

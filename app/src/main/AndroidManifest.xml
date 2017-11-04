@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lmachillot.ths">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProchaineDateActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NewTraitementActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ZonesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PremierePriseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SetRappelsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NouvelleDateActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RessourcesActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver
+            android:name=".NotifReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".BootService" />
+
+        <receiver
+            android:name="RestartAlarmsReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartAlarmsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".ConfigRappelsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UpdateTraitementActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ConfigZonesActivity" />
+        <activity android:name=".ConfigOrdoActivity" />
+        <activity
+            android:name=".NewOrdonnanceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RenouvellementOrdoActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RenouvellementStockActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ConfigStockActivity" />
+        <activity
+            android:name=".NewStockActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".SuiviHormonalActivity" />
+        <activity android:name=".NewTauxHormonalActivity" />
+        <activity android:name=".ConfigTauxActivity"></activity>
+    </application>
+
+</manifest>

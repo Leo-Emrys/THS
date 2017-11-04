@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nouvelle_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lmachillot.ths.NouvelleDateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/traitementnvdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/titrenewdate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:layout_below="@id/traitementnvdate"
+        android:id="@+id/titrenvelledate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titrenvdate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <DatePicker
+        android:layout_below="@id/titrenvelledate"
+        android:id="@+id/newdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_centerHorizontal="true"
+        >
+
+    </DatePicker>
+
+
+    <LinearLayout
+        android:layout_below="@id/newdate"
+        android:id="@+id/lignenvzone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/nvzonetitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titrezonenvdate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"/>
+
+        <Spinner
+            android:id="@+id/zonenewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            >
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lignenvzone"
+        android:id="@+id/lignedosagenvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dosagetitre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/dosagenvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dosagecontenu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lignedosagenvdate"
+        android:id="@+id/lignefrequencenvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frequencetxt1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/freqnvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintfrequence"
+            android:layout_marginRight="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jours"
+            android:textColor="@color/colorPrimary" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/lignefrequencenvdate"
+        android:id="@+id/validernvdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider"
+        android:layout_marginTop="10dp"
+        android:onClick="enregistrernouvelledate"/>
+
+
+    <TextView
+        android:layout_below="@id/validernvdate"
+        android:id="@+id/titreancdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dernieredate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_marginTop="10dp"
+        android:textColor="#34394d"/>
+
+    <TextView
+        android:layout_below="@id/titreancdate"
+        android:id="@+id/ancdate"
+        android:text="@string/ancdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#9867a2"/>
+
+
+    <TextView
+        android:layout_below="@id/ancdate"
+        android:id="@+id/anczone"
+        android:text="@string/anczone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

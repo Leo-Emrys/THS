@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/menu_prochainedate"
+        android:icon="@drawable/ic_calendar_clock"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:title="@string/prochainesdates_name"
+        />
+
+    <item
+        android:id="@+id/menu_ordonnance"
+        android:icon="@drawable/ic_file"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:title="@string/ordonnance_name"
+        />
+
+    <item
+        android:id="@+id/menu_stocks"
+        android:icon="@drawable/ic_pill"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:title="@string/stock_name"
+        />
+
+
+    <item
+        android:id="@+id/menu_dosages"
+        android:icon="@drawable/ic_chart_line"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:title="@string/dosages_name"
+        />
+
+    <item
+        android:id="@+id/menu_newtraitement"
+        android:icon="@drawable/ic_plus_circle_outline"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:title="@string/ajouter_name"
+        />
+
+
+
+
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/ic_information_outline"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:title="@string/about_name"
+        />
+
+</menu>

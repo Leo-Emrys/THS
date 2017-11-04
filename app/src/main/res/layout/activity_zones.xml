@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lmachillot.ths.ZonesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/titrezones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/titrezones"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_below="@id/titrezones"
+        android:id="@+id/explzones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="@string/explzones"/>
+
+    <TextView
+        android:layout_below="@id/explzones"
+        android:id="@+id/indiczone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/indicselectionzone"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_below="@id/indiczone"
+        android:id="@+id/lignezonespredef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/zoneselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="2dp"/>
+
+        <Spinner
+            android:id="@+id/coteselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="2dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/lignezonespredef"
+        android:id="@+id/titrenewzone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titrenewzone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_below="@id/titrenewzone"
+        android:id="@+id/lignepartiecorps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titrepartiecorps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newpartiecorps"
+            android:hint="__________"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lignepartiecorps"
+        android:id="@+id/lignecote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titrecote"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newcote"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_below="@id/lignecote"
+        android:id="@+id/buttonnouvellezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nouvellezone"
+        android:layout_marginTop="40dp"
+        android:onClick="validerEtContinuer" />
+
+    <Button
+        android:layout_below="@id/buttonnouvellezone"
+        android:id="@+id/validerterminerzone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/validerterminer"
+        android:layout_marginTop="10dp"
+        android:onClick="validerTerminer" />
+
+    <Button
+        android:layout_below="@id/validerterminerzone"
+        android:id="@+id/buttonpasserzone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/passerzones"
+        android:layout_marginTop="10dp"
+        android:onClick="passer" />
+
+    </RelativeLayout>
+
+</ScrollView>

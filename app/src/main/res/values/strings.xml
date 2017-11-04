@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">THS</string>
+    <string name="intitule"> Prochainx xxxxxxx le</string>
+    <string name="date">Jour 99 Mois AAAA</string>
+    <string name="title_activity_new_traitement">Settings</string>
+    <string name="titredonneestraitement">Nouveau traitement : données générales</string>
+
+
+    <string-array name="mois">
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Septembre</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Décembre</item>
+    </string-array>
+
+    <string-array name="jours">
+        <item>Dimanche</item>
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+    </string-array>
+
+    <string-array name="coté">
+        <item>(aucun)</item>
+        <item>gauche</item>
+        <item>droit(e)</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="nom">Nom :</string>
+    <string name="hormonetitre">Hormone :</string>
+    <string name="frequencetitre">Fréquence :</string>
+    <string name="frequencetxt">tous les</string>
+    <string name="hintfrequence">14</string>
+    <string name="jours">jours</string>
+    <string name="titrepremprise">Dernière prise </string>
+    <string name="hintnom">nom du produit</string>
+    <string name="annee">2017</string>
+    <string name="titretype">Type :</string>
+    <string name="valider">Valider</string>
+    <string name="dosagetitre">Dosage :</string>
+    <string name="hintdosage">mL, nb comprimés..</string>
+    <string name="titrezones">Zones d\'Application</string>
+    <string name="indicselectionzone">Sélectionnez une zone :</string>
+    <string name="titrenewzone">Ou ajoutez une zone :</string>
+    <string name="titrepartiecorps">Partie du corps</string>
+    <string name="titrecote">Coté </string>
+    <string name="passerzones">Ne pas ajouter de zone</string>
+    <string name="nouvellezone">valider et ajouter nouvelle zone</string>
+    <string name="explzones">Enregistrez des zones d\'application ou d\'injection. \n Si ce n\'est pas pertinent pour vous, appuyez simplement sur \"ne pas ajouter de zone\"</string>
+    <string name="validerterminer">valider et terminer</string>
+    <string name="titrezonepremprise">Zone d\'application</string>
+    <string name="titrepremdate">Date</string>
+    <string name="titrerappel">Rappels</string>
+    <string name="txtrecevoir">Recevoir une alerte</string>
+    <string name="hintrappel">0</string>
+    <string name="txtjoursav">jour(s) avant la prochaine date</string>
+    <string name="newrappel">valider et ajouter des rappels</string>
+    <string name="passerrappel">ne pas ajouter de rappel</string>
+    <string name="traitementrappel">nomtraitement? </string>
+    <string name="pourtraitement">pour le traitement :</string>
+    <string name="txtheurerappel">Heure du rappel : </string>
+    <string name="txthrappel">h</string>
+    <string name="heurerappelhint">8</string>
+    <string name="nouvelledate">entrer une nouvelle date</string>
+    <string name="nomtraitement">nom traitement</string>
+    <string name="titrenewdate">Traitement concerné :</string>
+    <string name="titrenvdate">Nouvelle xxx :</string>
+    <string name="titrezonenvdate">Zone d\'application</string>
+    <string name="dernieredate">Derniere xxxx :</string>
+    <string name="ancdate">jour xx mois annee</string>
+    <string name="anczone">zone : xxxxx xxxxx</string>
+    <string name="dosagecontenu">XX unite</string>
+    <string name="frequencetxt1">Fréquence : tous les</string>
+    <string name="prochainrappeltitre">Prochain rappel </string>
+    <string name="titrebienvenu">Bienvenue sur THS !</string>
+    <string name="informations">Informations</string>
+    <string name="nouveautraitement">entrer un traitement</string>
+    <string name="aucuntraitement">Vous n\'avez enregistré aucun traitement. \n Enregistrez un traitement pour commencer !</string>
+    <string name="rappelprochdate">configurer rappels</string>
+    <string name="ajoutertraitement">Ajouter un traitement</string>
+    <string name="ajouter_name">Nouveau traitement</string>
+    <string name="about_name">Ressources</string>
+    <string name="edit_name">modifier traitement</string>
+    <string name="rappels_name">rappels</string>
+    <string name="titre_configrappeltraitement">Rappels du traitement</string>
+    <string name="titre_configrappelordo">Rappels de l\'ordonnance</string>
+    <string name="ajouterrappel">ajouter un rappel</string>
+    <string name="supprimer">supprimer</string>
+    <string name="joursavantrappel">jours avant)</string>
+    <string name="titreupdatetraitement">Modifier le traitement</string>
+    <string name="changerzones">modifier les zones</string>
+    <string name="nomzone">zone cote</string>
+    <string name="titre_configzone">Zones du traitement</string>
+    <string name="ajouterzone">Ajouter une zone</string>
+    <string name="editer">éditer</string>
+    <string name="stock_name">Stocks</string>
+    <string name="ordonnance_name">Ordonnances</string>
+    <string name="titre_configordo">Ordonnances</string>
+    <string name="ajouterordo">nouvelle ordonnance</string>
+    <string name="nomordo">ordonnance</string>
+    <string name="delivranceordo">Délivrée le</string>
+    <string name="dureeordo">Durée :</string>
+    <string name="finordo">Valable jusque le</string>
+    <string name="traitementsordo">Traitement</string>
+    <string name="prochainrappelordo">Prochain rappel :</string>
+    <string name="majordo">Renouvellement</string>
+    <string name="titrenewordo">Nouvelle ordonnance</string>
+    <string name="hintordo">entrez un nom</string>
+    <string name="datetitre">Date :</string>
+    <string name="hintduree">90</string>
+    <string name="traitementsassoc">Traitement(s) associé(s) :</string>
+    <string name="renvordotitre">Renouvellement ordonnance</string>
+    <string name="daterenouvellement">Date du renouvellement :</string>
+    <string name="prochainesdates_name">Dates traitement</string>
+    <string name="pourlordonnance">pour l\'ordonnance :</string>
+    <string name="traitement">Traitement</string>
+    <string name="titre_configstock">Stocks</string>
+    <string name="ajouterstock">Ajouter stock</string>
+    <string name="titrenewstock">Nouveau stock</string>
+    <string name="textnewstock">Enregistrez ici votre stock de traitement disponible. Vous pourrez créer des rappels pour penser à le renouveller.</string>
+    <string name="traitementsassocstock">Stock pour :</string>
+    <string name="dureestock">Stock disponible pour :</string>
+    <string name="datetitrenv">Dernier renouvellement :</string>
+    <string name="hintdureestock">30</string>
+    <string name="pourstock">Rappels de stock pour :</string>
+    <string name="renvstock">Renouvellé le</string>
+    <string name="nomstock">Stock</string>
+    <string name="finstock">Epuisé le</string>
+    <string name="stockpour">Stock pour </string>
+    <string name="pasdetraitement">Aucun traitement enregistré</string>
+    <string name="titre_configrappelstock">Rappels de stock pour</string>
+    <string name="renvstocktitre">Renouvellement de stock</string>
+    <string name="renvstocksstitre">Traitement(s) :</string>
+    <string name="dosages_name">Suivi hormonal</string>
+    <string name="titre_suivihormonal">Suivi hormonal</string>
+    <string name="ajouterdosage">Ajouter un dosage</string>
+    <string name="pasdetaux">Vous n\'avez enregistré aucun taux hormonal. Entrez des résultats d\'analyses pour obtenir un graphique d\'évolution.</string>
+    <string name="modifdosages">editer les données</string>
+    <string name="titrenewdosage">Nouveau taux hormonal</string>
+    <string name="autretexte">autre...</string>
+    <string name="hintprecisez">Précisez...</string>
+    <string name="titretaux">Taux :</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="configtauxtittre">Modifier les données</string>
+
+</resources>
